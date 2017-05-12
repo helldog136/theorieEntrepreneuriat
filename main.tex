@@ -1,0 +1,105 @@
+% !TeX spellcheck = fr_FR
+\documentclass{article}
+\usepackage[a4paper,pdftex]{geometry}
+\usepackage[french]{babel}
+\usepackage{xcolor}
+\usepackage{fix-cm}
+\usepackage{hyperref}
+\usepackage[utf8]{inputenc} % Required for inputting international characters
+\usepackage[T1]{fontenc} % Output font encoding for international characters
+\usepackage{color,soul}
+\usepackage{graphicx}
+\usepackage{eurosym}
+
+\setlength{\oddsidemargin}{0mm} 
+\setlength{\evensidemargin}{0mm} 
+\newcommand{\HRule}[1]{\hfill \rule{0.2\linewidth}{#1}} % Horizontal rule at the bottom of the page, adjust width here
+
+\definecolor{grey}{rgb}{0.9,0.9,0.9} % Color of the box surrounding the title - these values can be changed to give the box a different color	
+\definecolor{umonsgreen}{rgb}{0.56862745,0.78039216,0.63137255}
+\definecolor{umonsdarkgreen}{rgb}{0.4,0.47,0.42}
+\definecolor{umonsblue}{rgb}{0.23,0.85,0.98}
+\definecolor{umonsdarkblue}{rgb}{0.23,0.33,0.95}
+\definecolor{umonsmetalblue}{rgb}{0.21,0.67,0.61}
+\definecolor{umonsred}{RGB}{168, 0, 57}
+\definecolor{umonsgray}{RGB}{150, 150, 150}
+\definecolor{umonsturquoise}{RGB}{0, 171, 204}
+
+
+\setul{0.3ex}{0.2ex}
+%\setulcolor{umonsred}
+\newcommand{\umonsU}{\textbf{\color{umonsgray}\setulcolor{umonsred}\ul{U}}}
+
+
+\usepackage[backend=biber,style=numeric,natbib=true]{biblatex} % Use the bibtex backend with the authoryear citation style (which resembles APA)
+
+\addbibresource{sources.bib} % The filename of the bibliography
+
+\usepackage[autostyle=true]{csquotes} % Required to generate language-dependent quotes in the bibliography
+
+\begin{document}
+
+\thispagestyle{empty}
+
+%----------------------------------------------------------------------------------------
+%	TITLE SECTION
+%----------------------------------------------------------------------------------------
+
+\colorbox{umonsmetalblue}{
+	\parbox[t]{1.0\linewidth}{
+		\centering \fontsize{40pt}{80pt}\selectfont % The first argument for fontsize is the font size of the text and the second is the line spacing - you may need to play with these for your particular title
+		\vspace*{0.7cm} % Space between the start of the title and the top of the grey box
+		
+		\hfill Questions théoriques \\
+		\hfill Entrepreneuriat\\
+		\hfill 2016-2017\par
+		
+		\vspace*{0.7cm} % Space between the end of the title and the bottom of the grey box
+	}
+}
+
+%----------------------------------------------------------------------------------------
+
+\vfill % Space between the title box and author information
+
+%----------------------------------------------------------------------------------------
+%	AUTHOR NAME AND INFORMATION SECTION
+%----------------------------------------------------------------------------------------
+
+{\centering \Large 
+	\hfill Plein de gens \\
+	\hfill Plein de sections \\
+	\hfill {\fontfamily{ptm}\selectfont \umonsU \textcolor{umonsred}{MONS}} \\
+	\hfill
+	\href{mailto:t-as-vraiment-cliqué}{Plein d'adresses mail} \\
+	
+	\HRule{1pt}} % Horizontal line, thickness changed here
+
+%----------------------------------------------------------------------------------------
+
+\clearpage % Whitespace to the end of the page
+\setcounter{tocdepth}{1}
+\tableofcontents
+\clearpage % Whitespace to the end of the page
+
+\section{Quels sont les points (contenu) à aborder lors du pitch et que doit contenir un executive summary ?}
+\section{Quelle est la structure classique d’un plan d’affaires ?}
+\section{Quels sont les 2 différents aspects à traiter pour le marché, et à quelles questions doit-on répondre?}
+\section{Définissez Marché, segment de marché et niche.}
+\section{Que faut-il comprendre / analyser dans l’offre des concurrents et
+pourquoi ?}
+\section{Quels sont les objectifs du plan financier ?}
+\section{Quelles sont les différentes mesures de la rentabilité des investissements ? Détaillez-en une.}
+\section{Quelle est la principale mesure de la rentabilité de l’exploitation ?
+Quelles en sont les limites ?}
+\section{Définissez le BFR et pourquoi faut-il surveiller son évolution ?}
+\section{Citez des actions permettant d’améliorer la position de trésorerie d’une
+entreprise ?}
+\section{Expliquez les trois concepts essentiels analysés lors d’un diagnostic
+financier.}
+\section{Définissez la notion de Valeur Ajoutée.}
+\section{Qu’est ce que le cash flow d’une entreprise ou pourquoi est-ce vital ?}
+
+\printbibliography
+
+\end{document}
