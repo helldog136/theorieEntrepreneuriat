@@ -10,6 +10,7 @@
 \usepackage{color,soul}
 \usepackage{graphicx}
 \usepackage{eurosym}
+\usepackage{float}
 
 \setlength{\oddsidemargin}{0mm} 
 \setlength{\evensidemargin}{0mm} 
@@ -149,12 +150,115 @@ Marché de Niche & : & \multicolumn{1}{p{.8\textwidth}|}{Le fait de viser un mar
 \end{tabular}
 \section{Que faut-il comprendre / analyser dans l’offre des concurrents et pourquoi ?} %TODO
 \section{Quels sont les objectifs du plan financier ?} %TODO
-%todo: 3 (Il serait bien d'en détailler plusieurs pour ne pas se retrouver tous à expliquer le même ;-))
+
+
+%todo: Adrien
 \section{Quelles sont les différentes mesures de la rentabilité des investissements ? Détaillez-en une.}
+\subsection{VAN}
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=14cm]{van.jpg}
+\end{figure}
+
+\paragraph{Un exemple pratique:}
+Une entreprise envisage l’acquisition d’une machine d’une valeur de 10.000\euro{}, utilisable et amortissable en linéaire sur 5 ans.
+Au bout des 5 ans, elle pourra encore être revendue à 1.000\euro{}.
+Cette machine permettrait d’améliorer le chiffre d’affaires de 7.000\euro{} par an et augmenterait les coûts de 2.000\euro{} par an. Le taux d’ actualisation retenu est de
+10\%. 30\% d’impôts. Cet investissement peut-il être envisagé ? (voir table \ref{van})
+
+\begin{table}[H]
+	\begin{center}
+\begin{tabular}{l c r}
+	chiffre d’ affaires supplémentaire &=&	7.000 \euro{}\\
+	- coût supplémentaire	&=&	-2.000 \euro{} \\
+	\hline
+	résultat brut généré	&=&	5.000 	\euro{}\\
+	- amortissements	&=&	-2.000 	\euro{}\\
+	\hline
+	résultat d’	exploitation	&=&	3.000 \euro{}\\
+	- impôts (30\%)	&=&	-900 	\euro{}\\
+	\hline
+	\color{red}résultat net	&\color{red}=&	\color{red}2.100 	\euro{}\\
+	+ amortissements	&=&	+2.000 	\euro{}\\
+	\hline
+	\color{red}F	&\color{red}=&	\color{red}4.100 	\euro{}\\
+\end{tabular}
+\end{center}
+\caption{\label{van} Calcul du Flux de Revenus (F) hors économie fiscale}
+\end{table}
+
+Donc, l’investissement rapporte :
+\begin{itemize}
+	\item en année 1 : $F_1$ = -5.900 \euro{}
+	\item en année 2 : $F_2$	= 	4.100 \euro{}
+	\item en année 3 : $F_3$	= 	4.100 \euro{}
+	\item en année 4 :	$F_4$	= 	4.100 \euro{}
+	\item en année 5 : $F_5$	= 	4.100 	\euro{}
+	\item en année 5 : la valeur résiduelle de la machine, soit, $1000 (1-0,30) = 700$ \euro{}
+\end{itemize}
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=10cm]{van-rentabilite.jpg}
+\end{figure}
+
+\subsection{TRI}
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=14cm]{tri.jpg}
+\end{figure}
+
+Sur l'exemple:
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=10cm]{tri-exemple.jpg}
+\end{figure}
+
+Notes : 
+Une tentative de graphe est dispo dans les slides sur la relation entre TRI et VAN mais ne veut absolument rien dire (si ce n'est mettre en évidence le fait que VAN=\euro{} et TRI=\%).
+Les slides présentent aussi la méthode PRA pour évaluer le temps nécessaire pour récupérer les montants investis mais précise que ça ne mesure pas la rentabilité du projet (malgré que ça se trouve dans la section rentabilité des investissements).
+
 \section{Quelle est la principale mesure de la rentabilité de l’exploitation ? Quelles en sont les limites ?}
+
+\subsection{BEP}
+Le seul de rentabilité (break-even point, BEP). Il répond à la question \textquote{quelle doit être la quantité à produire et à vendre de telle manière que les revenus (c’est-à-dire le chiffre d’affaires) couvrent l’ensemble des coûts?}. Au moment où on l'atteint, il n'y a ni gain, ni perte.
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=10cm]{bep.jpg}
+\end{figure}
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=10cm]{bep-graphe.jpg}
+\end{figure}
+
+\subsection{Ses limites}
+Les limites de l’approche «seuil de rentabilité» :
+\begin{itemize}
+	\item Les prix de vente et les coûts variables unitaires sont-ils constants dans 
+	le temps et indépendants du volume?
+	\item Comment appliquer la méthode quand on fait face à des produits 
+	multiples, complémentaires ou substituables?
+	\item Les frais fixes sont-ils constants dans le temps et réellement
+	indépendants du volume de production/vente?
+\end{itemize}
+~\\
+$\rightarrow$ Notion essentiellement de court terme. Elle suppose:
+
+\begin{itemize}
+	\item des investissements donnés,
+	\item Un product mix donné,
+	\item De faibles variations en termes de volume.
+\end{itemize}
+
 %todo: 4
 \section{Définissez le BFR et pourquoi faut-il surveiller son évolution ?}
 \section{Citez des actions permettant d’améliorer la position de trésorerie d’une entreprise ?}
+
+
+
 %todo: 5
 \section{Expliquez les trois concepts essentiels analysés lors d’un diagnostic financier.}
 \section{Définissez la notion de Valeur Ajoutée.}
